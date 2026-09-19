@@ -1,0 +1,5 @@
+(library
+  (name utf_ppx)
+  (kind ppx_rewriter)
+  (libraries ppxlib)
+  (modules utest ir gen_python generator))
