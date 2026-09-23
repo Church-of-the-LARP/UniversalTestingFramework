@@ -1,3 +1,6 @@
 (test
  (name test_universal_testing_framework)
- (libraries alcotest))
+ (libraries alcotest utf_bridge)
+ (deps spec_functions.py spec_server.py)
+ (preprocess
+  (pps utf_ppx)))

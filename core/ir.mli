@@ -1,5 +1,3 @@
-open Ppxlib
-
 type ir_type =
   | Ty_int
   | Ty_string
@@ -11,13 +9,13 @@ type ir_type =
 
 type ir_func_param = {
   name : string ;
-  ty   : ir_type ;
+  ty : ir_type ;
+  labelled : bool ;
 }
 
-
 type ir_func = {
-  name        : string ;
-  args        : ir_func_param list ;
+  name : string ;
+  args : ir_func_param list ;
   return_type : ir_type ;
 }
 

@@ -1,0 +1,11 @@
+(executable
+ (name poc)
+ (libraries utf_bridge)
+ (preprocess
+  (pps utf_ppx)))
+
+(rule
+ (alias runtest)
+ (deps poc_functions.py poc_server.py)
+ (action
+  (run %{exe:poc.exe})))

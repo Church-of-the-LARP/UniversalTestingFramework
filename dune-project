@@ -19,7 +19,7 @@
  (name universal_testing_framework)
  (synopsis "A short synopsis")
  (description "A longer description")
- (depends ocaml cmdliner (alcotest :with-test))
+ (depends ocaml cmdliner ppxlib (alcotest :with-test))
  (tags
   ("add topics" "to describe" your project)))
 

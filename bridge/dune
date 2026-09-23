@@ -1,0 +1,4 @@
+(library
+ (name utf_bridge)
+ (libraries unix)
+ (modules error utf_bridge value json client))

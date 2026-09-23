@@ -1,11 +1,4 @@
 (executable
- (public_name universal_testing_framework)
+ (public_name utf)
  (name main)
- (libraries cmdliner)
- (preprocess
-  (pps utf_ppx)))
-
-(rule
- (alias runtest)
- (action
-  (run %{exe:main.exe})))
+ (libraries cmdliner utf_core))
